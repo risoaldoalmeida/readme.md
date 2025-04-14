@@ -101,6 +101,7 @@ print(descrever_recurso(entrada))
 📊 Desafio – Opções de Preço do Azure Databricks
 
 # Recebe a entrada do usuário e armazena na variável "entrada"
+
 entrada = input("Digite uma opção de preço do Azure Databricks: ")
 
 # Função responsável por receber uma opção de preço e retornar sua respectiva descrição
@@ -109,22 +110,33 @@ entrada = input("Digite uma opção de preço do Azure Databricks: ")
 def descrever_precificacao(opcao):
 
     if opcao == "Pago conforme o uso":
+      
         return "Pague por segundo, sem compromissos. Escalável sob demanda"
+   
     elif opcao == "Plano de economia do Azure":
+        
         return "Compromisso de gasto fixo por hora (1 ou 3 anos) com preços reduzidos"
+  
     elif opcao == "Instâncias Reservadas":
+       
         return "Desconto por compromisso com instâncias por 1 ou 3 anos"
+   
     elif opcao == "Instâncias Spot":
+       
         return "Capacidade ociosa com grandes descontos, mas sujeita à interrupção"
+    
     else:
+        
         return "Opção de preço não reconhecida"
 
 # Imprime a descrição da opção de precificação recebida
+
 print(descrever_precificacao(entrada))
 
 🔧 Desafio – Recursos Azure Relacionados ao Databricks
 
 # Recebe a entrada do usuário e armazena na variável "entrada"
+
 entrada = input("Digite o nome do recurso Azure: ")
 
 # Função responsável por receber um recurso e retornar sua respectiva descrição
@@ -132,15 +144,25 @@ entrada = input("Digite o nome do recurso Azure: ")
 def descrever_recurso(recurso):
 
     if recurso == "Azure Data Factory":
+        
         return "Serviço de integração de dados híbridos e orquestração para ETL e ELT"
+        
     elif recurso == "Azure Databricks":
+       
         return "Plataforma Azure de análise de dados baseada em Apache Spark"
+        
     elif recurso == "Microsoft Fabric":
+        
         return "Plataforma unificada de análise de dados da Microsoft"
+    
     elif recurso == "Azure Synapse Analytics":
+    
         return "Serviço de análise que combina big data e data warehousing"
+    
     else:
+    
         return "Recurso não reconhecido"
 
 # Imprime a descrição do recurso recebido
+
 print(descrever_recurso(entrada))
