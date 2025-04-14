@@ -31,11 +31,11 @@ Durante a construção deste desafio, compreendi melhor como o **Databricks** fu
 
 # Recebe a entrada do usuário
 
-entrada = input()
+    entrada = input()
 
 # Função responsável por receber um conceito e retornar sua respectiva descrição
 
-def descrever_conceito(conceito):
+    def descrever_conceito(conceito):
 
     if conceito == "DBFS":
     
@@ -59,16 +59,20 @@ def descrever_conceito(conceito):
 
 # Imprime a descrição do conceito recebido
 
-print(descrever_conceito(entrada))
+    print(descrever_conceito(entrada))
+
+
+## 📸 Prints do Projeto
 
 ### ➤ Execução do recurso:
 
 # Recebe a entrada do usuário
-entrada = input()
+    
+    entrada = input()
 
 # Função responsável por receber um recurso e retornar sua respectiva descrição
 
-def descrever_recurso(recurso):
+    def descrever_recurso(recurso):
 
     if recurso == "IA":
     
@@ -96,18 +100,21 @@ def descrever_recurso(recurso):
 
 # Imprime a descrição do recurso recebido
 
-print(descrever_recurso(entrada))
+    print(descrever_recurso(entrada))
+
 
 📊 Desafio – Opções de Preço do Azure Databricks
 
-# Recebe a entrada do usuário e armazena na variável "entrada"
+## 📸 Prints do Projeto
 
-entrada = input("Digite uma opção de preço do Azure Databricks: ")
+## Recebe a entrada do usuário e armazena na variável "entrada"
 
-# Função responsável por receber uma opção de preço e retornar sua respectiva descrição
+    entrada = input("Digite uma opção de preço do Azure Databricks: ")
+
+## Função responsável por receber uma opção de preço e retornar sua respectiva descrição
 
 
-def descrever_precificacao(opcao):
+    def descrever_precificacao(opcao):
 
     if opcao == "Pago conforme o uso":
       
@@ -129,19 +136,19 @@ def descrever_precificacao(opcao):
         
         return "Opção de preço não reconhecida"
 
-# Imprime a descrição da opção de precificação recebida
+## Imprime a descrição da opção de precificação recebida
 
-print(descrever_precificacao(entrada))
+    print(descrever_precificacao(entrada))
 
-🔧 Desafio – Recursos Azure Relacionados ao Databricks
+##🔧 Desafio – Recursos Azure Relacionados ao Databricks
 
-# Recebe a entrada do usuário e armazena na variável "entrada"
+## Recebe a entrada do usuário e armazena na variável "entrada"
 
-entrada = input("Digite o nome do recurso Azure: ")
+    entrada = input("Digite o nome do recurso Azure: ")
 
-# Função responsável por receber um recurso e retornar sua respectiva descrição
+## Função responsável por receber um recurso e retornar sua respectiva descrição
 
-def descrever_recurso(recurso):
+    def descrever_recurso(recurso):
 
     if recurso == "Azure Data Factory":
         
@@ -163,6 +170,6 @@ def descrever_recurso(recurso):
     
         return "Recurso não reconhecido"
 
-# Imprime a descrição do recurso recebido
+## Imprime a descrição do recurso recebido
 
-print(descrever_recurso(entrada))
+    print(descrever_recurso(entrada))
