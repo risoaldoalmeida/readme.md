@@ -174,12 +174,23 @@ Durante a construção deste desafio, compreendi melhor como o **Databricks** fu
 
     print(descrever_recurso(entrada))
 
+## Importar arquivo CSV para o databricks
 
-import pandas as pd
+    import pandas as pd
 
-# Lendo o CSV diretamente do GitHub da Microsoft
-url = "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-databricks/main/data/products.csv"
-df = pd.read_csv(url)
+# URL do arquivo CSV
 
-# Exibe as 5 primeiras linhas
-print(df.head())
+    url = "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-databricks/main/data/products.csv"
+
+# Lê o CSV diretamente da URL
+
+    df = pd.read_csv(url)
+
+# Exibe o DataFrame
+
+    print(df)
+
+# Filtrar Road Bikes
+
+    df_filtered = df[df['Category'] == 'Road Bikes']
+    display(df_filtered)
