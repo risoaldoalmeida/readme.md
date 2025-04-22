@@ -173,3 +173,13 @@ Durante a construção deste desafio, compreendi melhor como o **Databricks** fu
 ## Imprime a descrição do recurso recebido
 
     print(descrever_recurso(entrada))
+
+
+import pandas as pd
+
+# Lendo o CSV diretamente do GitHub da Microsoft
+url = "https://raw.githubusercontent.com/MicrosoftLearning/mslearn-databricks/main/data/products.csv"
+df = pd.read_csv(url)
+
+# Exibe as 5 primeiras linhas
+print(df.head())
